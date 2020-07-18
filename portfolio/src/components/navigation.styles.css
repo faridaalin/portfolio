@@ -1,0 +1,100 @@
+nav {
+    /* padding-top: 36px;
+    width: 65vw; */
+    /* background: #4F4F4F;
+    height: 100%;
+    width: 100%;
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.5s; */
+}
+
+.mobile-menu {
+    position: relative;
+    right: -300px;
+    top: 30px;
+    z-index: 200;
+    width: 45px;
+    
+}
+
+.mobile-menu .bar {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(45deg, #FF5E6B, #E2177F);
+    transition: width 0.55s ease;
+}
+.mobile-menu .bar:nth-child(2) {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.mobile-menu.scale-down .bar:nth-child(1){
+    width: 25%;
+}
+
+.mobile-menu.scale-down .bar:nth-child(2){
+    width: 50%;
+}
+
+.mobile-menu.scale-down .bar:nth-child(3){
+    width: 75%;
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+
+    background: #4F4F4F;
+    width: 60vw;
+    transform: translateX(167%);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  
+}
+
+.nav-links.show-menu {
+    transform: translateX(67%);
+}
+
+.nav-links li{
+    font-family: 'Oxygen', sans-serif;
+    margin-bottom: 20px;
+}
+
+
+.nav-links li a.active-link, .nav-links li a:hover{
+    z-index: 100;
+    font-weight: 700;
+    background-color: #FF5E6B; ;
+    background-image: linear-gradient(45deg, #FF5E6B, #E2177F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-weight: 100;
+    color: #C7C7C7;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
