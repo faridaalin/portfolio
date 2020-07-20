@@ -1,10 +1,13 @@
-import React from 'react';
-
+import React from "react";
+import { Card, Content } from "./components/card-component";
+import profile from "./img/profile.jpg";
+import './index.css'
 
 function About() {
   return (
-    <div style={{marginTop: '100px'}}>
-      <h1>About page</h1>
+    <div className="page-wrapper about">
+      <Card image={profile} name="Profile image" />
+      <Content />
     </div>
   );
 }

@@ -1,0 +1,58 @@
+.card-container {
+    background: rgba(109, 108, 108, 0.35);
+  overflow: hidden;
+  opacity: 0.5;
+  box-shadow: 1px -5px 10px #615f5f;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+.card-container img{
+object-fit: cover;
+height: 100%;
+}
+
+.content-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.content-title {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    color: #828282;
+}
+
+.content-text {
+font-family: "Nunito Sans", sans-serif;
+font-weight: 300;
+color: #C7C7C7;
+margin-top: -25px;
+padding-bottom: 16px;
+
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 3;
+grid-row-end: 4;
+}
+
+.btn {
+padding: 8px 8px;
+display: flex;
+}
+.btn a{
+    margin-right: 16px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-family: "Oxygen", sans-serif;
+    text-transform: uppercase;
+}
+.btn a, #btn-arrow-right {
+color: #DCE9FF;
+}
