@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 import Header from './components/header-component'
-import Menu from './components/nav/Menu'
+import Menu from './components/nav/menu'
 
 function App() {
   return (
