@@ -10,21 +10,14 @@ import './card.styles.css'
 
 export const ProjectContainer = (props) => {
     const [projectName, setProjectName] = useState("SpaceX")
+    const [active, setActive] = useState(3)
     let [data] = useState(props.projectList)
 
-    const clickHandler = value => event => {
+    const clickHandler = (value, index) => (event) => {
+        let dataIndex = parseInt(event.target.dataset.index);
+        setActive(dataIndex)
         setProjectName(value);
-        let target = event.target;
-        target.className.includes("active")
-                ? (target.className = "project-name")
-                : (target.className = "project-name active");
-        
 
-            event.target.parentNode.childNodes.forEach(element => {
-                
-            console.dir(element)
-            console.dir(element.className.includes("active"))
-        })
       };
 
     
@@ -32,7 +25,7 @@ export const ProjectContainer = (props) => {
     return (
         <div className="project-container">
             <ul>
-                {data.map((project, index) => <ProjectNav key={index} clickHandler={clickHandler} name={project.name}/>)}
+                {data.map((project, index) => <ProjectNav active={active} key={index} index={index} clickHandler={clickHandler} name={project.name}/>)}
             </ul>
 
             {data.filter(project => projectName === project.name).map((filteredProject, index) =>

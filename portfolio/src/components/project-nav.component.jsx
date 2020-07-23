@@ -2,10 +2,9 @@ import React from 'react';
 import './project.styles.css'
 import './card.styles.css'
 
-function ProjectNav({name, clickHandler}) {
-    
+function ProjectNav({name, clickHandler, index, active}) {
     return (
-        <li className={`project-name`}  onClick={clickHandler(name)}>{name}</li>
+        <li className={`project-name ${active === index ? 'active' : ''}`} data-index={index}  onClick={clickHandler(name, index)}>{name}</li>
     )
 }
 
