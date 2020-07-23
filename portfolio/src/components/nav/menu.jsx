@@ -5,15 +5,11 @@ import AsideMenu from './asideMenu'
 import Hamburger from './hamburger'
 
 const Menu = () => {
-    const [open, setOpen] = useState(false)
-
-    const openHandler = () => {
-        setOpen(!open)
-    }
+    const [open, setOpen] = useState(false);
 
     return (
         <nav>
-            <Hamburger open={open} onClick={openHandler}/>
+            <Hamburger open={open} setOpen={setOpen} />
             <AsideMenu setOpen={setOpen} open={open} />
         </nav>
     )

@@ -8,8 +8,7 @@ img {
   width: 100%;
 }
 .page-wrapper {
-  background: blue;
-  padding: 100px 10px 0 10px;
+  padding: 100px 16px 0 16px;
 }
 .about {
   background: #4F4F4F;

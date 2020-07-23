@@ -6,7 +6,6 @@ import './navigation.styles.css';
 
 function AsideMenu({ setOpen, open, history }) {
     
-
     useEffect(() => {
         history.listen(() => {
             setOpen(false)

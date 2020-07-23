@@ -1,11 +1,15 @@
 import React from 'react';
+import {ProjectContainer} from './components/project-container.component'
+import { projects } from './data/projectsData'
+
+import './components/project.styles.css'
 
 
 function Projects() {
   return (
-    <div style={{marginTop: '100px'}}>
-      <h1>Projects page</h1>
-    </div>
+    <div className="page-wrapper project">
+       <ProjectContainer {...projects}/>
+       </div>
   );
 }
 
