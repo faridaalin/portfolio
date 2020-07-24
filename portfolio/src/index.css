@@ -17,6 +17,11 @@ img {
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
+.contact {
+  background: #4F4F4F;
+  height: 100vh;
+}
+
 
 body {
   margin: 0;

@@ -9,14 +9,14 @@ import './card.styles.css'
 
 
 export const ProjectContainer = (props) => {
-    const [projectName, setProjectName] = useState("SpaceX")
+    const [projectName, setProjectName] = useState(3)
     const [active, setActive] = useState(3)
     let [data] = useState(props.projectList)
 
-    const clickHandler = (value, index) => (event) => {
+    const clickHandler = (index) => (event) => {
         let dataIndex = parseInt(event.target.dataset.index);
         setActive(dataIndex)
-        setProjectName(value);
+        setProjectName(index);
 
       };
 
@@ -28,7 +28,7 @@ export const ProjectContainer = (props) => {
                 {data.map((project, index) => <ProjectNav active={active} key={index} index={index} clickHandler={clickHandler} name={project.name}/>)}
             </ul>
 
-            {data.filter(project => projectName === project.name).map((filteredProject, index) =>
+            {data.filter((project, index) => projectName === index).map((filteredProject, index) =>
             <ProjectCards key={index}{...filteredProject} />)}
         </div>
     )

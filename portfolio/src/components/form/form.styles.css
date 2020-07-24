@@ -1,0 +1,65 @@
+form {
+  width: 60vw;
+    margin: auto;
+    padding: 32px 0;
+}
+
+
+label {
+    color: #8F8F8F;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    margin-bottom: -8px;
+}
+
+.input {
+    color: #8F8F8F;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #8F8F8F;
+    background-color: transparent;
+}
+.input:focus {
+    color: #DCE9FF;
+    font-size: 17px;
+    border-bottom-color: #DCE9FF;
+}
+.error {
+    color: #E91E63;
+    padding-top: 8px;
+     font-family: "Nunito Sans", sans-serif;
+     font-size: 16px;
+}
+
+/* .input-container:focus-within label {
+    margin-bottom: 0px;
+    font-size: 12px;
+    transition: all .2s ease;
+} */
+
+.btn-container {
+    display: flex;
+    padding-top: 32px;
+}
+.btn-container #btn-arrow-right {
+    font-size: 24px;
+}
+
+.btn-send {
+    letter-spacing: 0.1em;
+    font-family: "Oxygen", sans-serif;
+    text-transform: uppercase;
+    color: #DCE9FF;
+    background: none;
+    border: none;
+    padding-right: 16px;
+    font-size: 16px;
+}
+
+
+.btn-container:hover .btn-send, .btn-container:hover #btn-arrow-right{
+    background-color: #FF5E6B;
+    background-image: linear-gradient(45deg, #FF5E6B, #E2177F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

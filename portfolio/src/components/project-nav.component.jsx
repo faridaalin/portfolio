@@ -4,7 +4,7 @@ import './card.styles.css'
 
 function ProjectNav({name, clickHandler, index, active}) {
     return (
-        <li className={`project-name ${active === index ? 'active' : ''}`} data-index={index}  onClick={clickHandler(name, index)}>{name}</li>
+        <li className={`project-name ${active === index ? 'active' : ''}`} data-index={index}  onClick={clickHandler(index)}>{name}</li>
     )
 }
 
