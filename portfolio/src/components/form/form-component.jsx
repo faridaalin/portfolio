@@ -1,59 +1,103 @@
-import React, {useRef}  from 'react';
-import styled from 'styled-components'
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 
-
-import './form.styles.css'
-
- const Div = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 32px;
-    `;
-
-
-
+import "./form.styles.css";
 
 function Form() {
+  const [inputNameLength, setInputNameLength] = useState(0);
+  const [inputEmailLength, setInputEmailLength] = useState(0);
+  const [inputMessageLength, setInputMessageLength] = useState(0);
 
-    //if input field is in focus && if input field has length > 0
-    // add style
-   
+  const { handleSubmit, register, errors } = useForm();
 
-    const handleSubmit = ( event) => {
-        event.preventDefault()
-        // console.log(data)
-    }
-
-
-    return(
-        <form onSubmit={handleSubmit}>
-            <Div>
-            <label htmlFor="name" >Name</label>
-            <input className="input" type="text" name="name" id="name" />
-
-            </Div>
-
-            <Div>
-            <label htmlFor="email">Email</label>
-            <input className="input" type="email" name="email" id="email"/>
-            </Div>
+  const nameHandler = (e) => {
+    setInputNameLength(e.target.value.trim().length);
+  };
+  const emailHandler = (e) => {
+    setInputEmailLength(e.target.value.trim().length);
+  };
+  const messageHandler = (e) => {
+    setInputMessageLength(e.target.value.trim().length);
+  };
 
 
-            <Div>
-            <label htmlFor="message">Message</label>
-            <textarea className="input"  name="message" id="message" cols="30" rows="10"></textarea>
-            </Div>
+  const onSubmit = data => console.log(data);
 
-            <div className="btn-container">
-                <input className="btn-send" type="submit" value="Submit"/>
-                <i id="btn-arrow-right" className="material-icons">
-                arrow_right_alt
-             </i>
-            </div>  
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <div
+        className={`input-container ${
+          inputNameLength > 0 ? "changeStyle" : ""
+        }`}
+      >
+        <label htmlFor="name">Name</label>
+        <input
+          className="input"
+          type="text"
+          name="name"
+          id="name"
+          ref={register({
+            required: true, 
+            minLength: 2,
+          })}
+          onBlur={nameHandler}
+        />
+        {errors.name && errors.name.type === "required" && <p className="error">Required</p>}
+         {errors.name && errors.name.type === "minLength" && <p className="error">Must be more than two characters</p>}
+      </div>
 
-        </form>
-    )
+      <div
+        className={`input-container ${
+          inputEmailLength > 0 ? "changeStyle" : ""
+        }`}
+      >
+        <label htmlFor="email">Email</label>
+        <input
+          className="input"
+          type="email"
+          name="email"
+          id="email"
+          ref={register({
+            required: true,
+            pattern: {
+              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              message: "invalid email address",
+            },
+          })}
+          onBlur={emailHandler}
+        />
+         {errors.email && errors.email.type === "required" && <p className="error">Required</p>}
+         {errors.email && errors.email.type === "pattern" && <p className="error">Invalid email</p>}
+      </div>
 
+      <div
+        className={`input-container ${inputMessageLength > 0 ? "changeStyle" : ""}`}
+      >
+        <label htmlFor="message">Message</label>
+        <textarea
+          className="input"
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          ref={register({
+            required: true, 
+            minLength: 8,
+          })}
+          onBlur={messageHandler}
+        ></textarea>
+         {errors.message && errors.message.type === "required" && <p className="error">Required</p>}
+         {errors.message && errors.message.type === "minLength" && <p className="error">Must more than 8 characters.</p>}
+      </div>
+
+      <div className="btn-container">
+        <input className="btn-send" type="submit" value="Submit" />
+        <i id="btn-arrow-right" className="material-icons">
+          arrow_right_alt
+        </i>
+      </div>
+    </form>
+  );
 }
 
 export default Form;
