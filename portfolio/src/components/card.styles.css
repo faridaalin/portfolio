@@ -1,8 +1,6 @@
 .card-container {
-    background: rgba(109, 108, 108, 0.35);
   overflow: hidden;
-  opacity: 0.5;
-  box-shadow: 1px -5px 10px #615f5f;
+  box-shadow: 1px 5px 10px #6361617a;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -26,13 +24,14 @@ height: 100%;
     font-family: "Oxygen", sans-serif;
     font-weight: 700;
     font-size: 200px;
-    color: #828282;
+    color: #464545;
+    opacity: 0.5;
 }
 
 .content-text {
 font-family: "Nunito Sans", sans-serif;
 font-weight: 300;
-color: #C7C7C7;
+color: #565656;
 margin-top: -25px;
 padding-bottom: 16px;
 
@@ -54,5 +53,5 @@ display: flex;
     text-transform: uppercase;
 }
 .btn a, #btn-arrow-right {
-color: #DCE9FF;
+    color: #0a0a0a;
 }

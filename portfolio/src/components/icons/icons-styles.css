@@ -1,0 +1,16 @@
+.icon-container {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0 16px;
+    background-color: #f2f2f2;
+}
+
+svg:hover {
+fill: pink;
+}
+svg {
+    fill: #C7C7C7;
+    width: 30px;
+    height: 30px;
+    margin: 16px;
+}

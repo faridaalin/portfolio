@@ -6,7 +6,7 @@ import './card.styles.css'
 export const Content = ({ heading, description }) => {
     return (
         <div className="content-container">
-            <h1 className="content-title">{heading}</h1>
+            <h2 className="content-title">{heading}</h2>
             <p className="content-text">{description}</p>
         </div>
     )

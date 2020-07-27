@@ -1,5 +1,5 @@
 form {
-  width: 60vw;
+  width: 80vw;
     margin: auto;
     padding: 32px 0;
 }
@@ -9,6 +9,7 @@ label {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 300;
     margin-bottom: -8px;
+    transition: all .2s ease;
 }
 
 .input {
@@ -20,9 +21,9 @@ label {
     font-family: "Nunito Sans", sans-serif;
 }
 .input:focus {
-    color: #DCE9FF;
+    color: #0a0a0a;;
     font-size: 17px;
-    border-bottom-color: #DCE9FF;
+    border-bottom-color: #0a0a0a;;
 }
 .error {
     color: #E91E63;
@@ -50,9 +51,9 @@ label {
     transition: all .2s ease;
 }
 .changeStyle  input, .changeStyle  textarea{
-    color: #DCE9FF;
+    color: #0a0a0a;;
     font-size: 17px;
-    border-bottom-color: #DCE9FF;
+    border-bottom-color: #0a0a0a;;
    
 }
 
@@ -70,7 +71,7 @@ label {
     letter-spacing: 0.1em;
     font-family: "Oxygen", sans-serif;
     text-transform: uppercase;
-    color: #DCE9FF;
+    color: #0a0a0a;
     background: none;
     border: none;
     padding-right: 16px;
