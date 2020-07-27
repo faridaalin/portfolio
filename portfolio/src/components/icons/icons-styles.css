@@ -1,9 +1,13 @@
 .icon-container {
+    background-color: #f2f2f2;
+}
+
+.icon-container-inner {
     display: flex;
     justify-content: center;
     padding: 32px 0 16px;
-    background-color: #f2f2f2;
 }
+  
 
 svg:hover {
 fill: pink;
@@ -13,4 +17,12 @@ svg {
     width: 30px;
     height: 30px;
     margin: 16px;
+}
+
+@media screen and (min-width: 798px) {
+    .icon-container-inner {
+      flex-direction: column;
+      max-width: 1224px;
+    margin: auto;
+    }
 }

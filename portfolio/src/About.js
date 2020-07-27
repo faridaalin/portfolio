@@ -1,5 +1,5 @@
 import React from "react";
-import { CardImage, Content, Button } from "./components/card-component";
+import { CardImage, Content } from "./components/card-component";
 import PageHeader from "./components/page-header/page-header.component";
 import "./index.css";
 
@@ -14,7 +14,6 @@ function About() {
       <div className="about">
         <CardImage image={about.image} name={about.name} />
         <Content {...about} />
-        <Button name="Contact" />
       </div>
     </div>
   );

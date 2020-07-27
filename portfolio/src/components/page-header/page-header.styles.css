@@ -15,14 +15,21 @@
   letter-spacing: 2px;
 }
 
+@media screen and (min-width: 798px) {
+  .page-header {
+    max-width: 1224px;
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 1182px) {
   .page-header {
     padding-top: 32px;
   }
 }
-@media screen and (min-width: 1966px) {
+/* @media screen and (min-width: 1966px) {
   .page-header {
     max-width: 1966px;
     margin: auto;
   }
-}
+} */

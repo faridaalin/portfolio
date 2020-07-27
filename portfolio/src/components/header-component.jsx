@@ -1,13 +1,10 @@
 import React from 'react';
-import './header.styles.css';
+import Menu from './nav/menu'
 
 
 function Header() {
     return(
-        <header className="header">
-            <span>Create</span>
-            <span>Content</span>
-        </header>
+        <Menu />
     )
 }
 

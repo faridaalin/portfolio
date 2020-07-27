@@ -1,14 +1,21 @@
-import React from 'react';
+import React from "react";
 
-import Form from './components/form/form-component'
-import PageHeader from './components/page-header/page-header.component'
-
+import './contact.styles.css'
+import Form from "./components/form/form-component";
+import PageHeader from "./components/page-header/page-header.component";
 
 function Contact() {
   return (
     <div className="page-wrapper contact">
-      <PageHeader title="Contact"/>
-      <Form />
+      <PageHeader title="Contact" />
+      <div className="form-container">
+          <p className="contact-intro">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore{" "}
+          </p>
+      
+        <Form />
+      </div>
     </div>
   );
 }

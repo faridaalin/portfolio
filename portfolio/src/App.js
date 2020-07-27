@@ -17,7 +17,6 @@ function App() {
       <div className="page-container">
         <div className="content-wrap">
           <Header />
-          <Menu />
           {/*A Switch looks trough its children <Route> and
            renders the first one that matches the current URL */}
           <Switch> 

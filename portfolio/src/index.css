@@ -10,10 +10,12 @@ img {
  padding-top: 150px;
   background-color: #f2f2f2;
 }
+
 .about {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 32px 32px;
 }
 
 .contact {
@@ -45,6 +47,20 @@ code {
   }
 }
 
+@media screen and (min-width: 798px) {
+
+  .page-wrapper{ 
+    padding-top: 50px;
+  }
+  .about  {
+   display: flex;
+   flex-direction: row-reverse;
+   max-width: 1131px;
+   margin: auto;
+  }
+
+
+}
 
 @media screen and (min-width: 1182px) {
   body {

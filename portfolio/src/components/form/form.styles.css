@@ -1,87 +1,98 @@
 form {
   width: 80vw;
-    margin: auto;
-    padding: 32px 0;
+  margin: auto;
+  padding: 32px 0;
 }
 
 label {
-    color: #8F8F8F;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 300;
-    margin-bottom: -8px;
-    transition: all .2s ease;
+  color: #8f8f8f;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  margin-bottom: -8px;
+  transition: all 0.2s ease;
+  font-size: 22px;
 }
 
 .input {
-    color: #8F8F8F;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #8F8F8F;
-    background-color: transparent;
-    font-family: "Nunito Sans", sans-serif;
+  color: #8f8f8f;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #8f8f8f;
+  background-color: transparent;
+  font-family: "Nunito Sans", sans-serif;
 }
 .input:focus {
-    color: #0a0a0a;;
-    font-size: 17px;
-    border-bottom-color: #0a0a0a;;
+  color: #0a0a0a;
+  font-size: 26px;
+  border-bottom-color: #0a0a0a;
 }
 .error {
-    color: #E91E63;
-    padding-top: 8px;
-     font-family: "Nunito Sans", sans-serif;
-     font-size: 16px;
+  color: #e91e63;
+  padding-top: 8px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
 }
 
 .input-container {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
 }
 .input-container:focus-within label {
-    margin-bottom: 0px;
-    padding-bottom: 8px;
-    font-size: 12px;
-    transition: all .2s ease;
+  margin-bottom: 0px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  transition: all 0.2s ease;
 }
 
-.changeStyle  label{
-    padding-bottom: 8px;
-    margin-bottom: 0px;
-    font-size: 12px;
-    transition: all .2s ease;
+.changeStyle label {
+  padding-bottom: 16px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  transition: all 0.2s ease;
 }
-.changeStyle  input, .changeStyle  textarea{
-    color: #0a0a0a;;
-    font-size: 17px;
-    border-bottom-color: #0a0a0a;;
-   
+.changeStyle input,
+.changeStyle textarea {
+  color: #0a0a0a;
+  font-size: 26px;
+  border-bottom-color: #0a0a0a;
 }
-
-
 
 .btn-container {
-    display: flex;
-    padding-top: 32px;
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
 }
 .btn-container #btn-arrow-right {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .btn-send {
-    letter-spacing: 0.1em;
-    font-family: "Oxygen", sans-serif;
-    text-transform: uppercase;
-    color: #0a0a0a;
-    background: none;
-    border: none;
-    padding-right: 16px;
-    font-size: 16px;
+  letter-spacing: 0.1em;
+  font-family: "Oxygen", sans-serif;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  background: none;
+  border: none;
+  padding-right: 16px;
+  font-size: 28px;
 }
 
+#btn-arrow-right {
+  font-size: 36px;
+}
 
-.btn-container:hover .btn-send, .btn-container:hover #btn-arrow-right{
-    background-color: #FF5E6B;
-    background-image: linear-gradient(45deg, #FF5E6B, #E2177F);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.btn-container:hover .btn-send,
+.btn-container:hover #btn-arrow-right {
+  background-color: #ff5e6b;
+  background-image: linear-gradient(45deg, #ff5e6b, #e2177f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 798px) {
+  form {
+    width: 50vw;
+    padding-right: 32px;
+  }
 }

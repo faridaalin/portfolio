@@ -8,6 +8,7 @@ export const Content = ({ heading, description }) => {
         <div className="content-container">
             <h2 className="content-title">{heading}</h2>
             <p className="content-text">{description}</p>
+            <Button name="Contact" />
         </div>
     )
 }
