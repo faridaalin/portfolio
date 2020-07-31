@@ -3,7 +3,6 @@ import './project.styles.css'
 
 
 function ProjectCards({ name, date, gitHub_src_code, image, description, tags, link }) {
-    console.log(image)
     return (
 
         <div className="project-card">

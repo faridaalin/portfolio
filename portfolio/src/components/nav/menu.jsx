@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
+import { withRouter } from "react-router";
 import './navigation.styles.css';
 
 import LogoContainer from './Logo-container'
 import AsideMenu from './asideMenu'
 import Hamburger from './hamburger'
 
-const Menu = () => {
+const Menu = ({location}) => {
     const [open, setOpen] = useState(false);
-
     return (
         <header>
             <LogoContainer />
-            <nav>
+            {location.pathname !== '/' && location.pathname !== '/home' && <nav>
                 <Hamburger open={open} setOpen={setOpen} />
                 <AsideMenu setOpen={setOpen} open={open} />
-            </nav>
+            </nav>}
         </header>
 
     )
 }
 
-export default Menu;
+export default  withRouter(Menu);

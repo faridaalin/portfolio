@@ -4,8 +4,8 @@ import { NavLink, withRouter } from "react-router-dom"
 import './navigation.styles.css';
 
 
-function AsideMenu({ setOpen, open, history }) {
-    
+function AsideMenu({ setOpen, open, history, location }) {
+
     useEffect(() => {
         history.listen(() => {
             setOpen(false)
@@ -14,7 +14,11 @@ function AsideMenu({ setOpen, open, history }) {
 
 
     return (
+        <div>
             <ul className={`nav-links ${open ? 'show' : ''}`}>
+                <li>
+                    <NavLink to="/">Home</NavLink>
+                </li>
                 <li>
                     <NavLink to="/projects" activeClassName="active-link">Projects</NavLink>
                 </li>
@@ -25,6 +29,8 @@ function AsideMenu({ setOpen, open, history }) {
                     <NavLink to="/contact" activeClassName="active-link">Contact</NavLink>
                 </li>
             </ul>
+        </div>
+
 
     )
 }
