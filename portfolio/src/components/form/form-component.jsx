@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import "./form.styles.css";
 
@@ -20,11 +23,15 @@ function Form() {
     setInputMessageLength(e.target.value.trim().length);
   };
 
+  useEffect(()=> {
+    AOS.init({duration: 1000, once: true})
+}, [])
+
 
   const onSubmit = data => console.log(data);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form  data-aos="fade-left" onSubmit={handleSubmit(onSubmit)}>
       <div
         className={`input-container ${
           inputNameLength > 0 ? "changeStyle" : ""

@@ -1,3 +1,12 @@
+.header.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    /* box-shadow: 0 5px rgba(0, 0, 0, 0.1); */
+}
+
 .mobile-menu {
     position: fixed;
     right: 20px;
@@ -9,7 +18,7 @@
 .mobile-menu .bar {
     height: 4px;
     width: 100%;
-    background: linear-gradient(45deg, #FF5E6B, #E2177F);
+    background-color: #d40101;
     transition: width 0.55s ease;
 }
 .mobile-menu .bar:nth-child(2) {
@@ -53,39 +62,34 @@
 }
 
 
-
 .nav-links li{
     font-family: 'Oxygen', sans-serif;
     margin-bottom: 20px;
 }
 
-
-
-
-.nav-links li a.active-link, .nav-links li a:hover{
-    z-index: 100;
-    padding-bottom: 8px;
-    background: linear-gradient(45deg, #FF5E6B, #E2177F);
-    background-size: 100% 2px;
-    background-position: bottom 0 left 0;
-    background-repeat: no-repeat;
-    transform-origin: bottom;
-    opacity: 1;
-    transition: opacity 0.5s ease;
-}
-
 .nav-links li a{
+    padding-bottom: 8px;
     text-decoration: none;
     font-weight: 100;
     color: #C7C7C7;
     font-size: 20px;
     text-transform: uppercase;
+    border-bottom: 2px solid  transparent;
 }
+
+
+.nav-links li a.active-link, .nav-links li a:hover{
+    z-index: 100;
+    border-bottom-color: #d40101;    
+    transition: all 0.5s ease;    
+}
+
 
 @media screen and (min-width: 798px) {
     header {
         background-color: #f2f2f2;
         display: flex;
+        width: 100%;
         max-width: 1224px;
         margin: auto;
     }

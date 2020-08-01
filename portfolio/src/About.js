@@ -1,5 +1,4 @@
 import React from "react";
-
 import { CardImage, Content } from "./components/card-component";
 import PageHeader from "./components/page-header/page-header.component";
 import "./index.css";
@@ -7,6 +6,7 @@ import "./index.css";
 import { about } from "./data/aboutMe";
 
 function About() {
+
 
   return (
     <div className="page-wrapper">

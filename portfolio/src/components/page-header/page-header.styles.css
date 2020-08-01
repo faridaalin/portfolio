@@ -3,16 +3,14 @@
 }
 
 .page-title {
-  background-color: #ff5e6b;
-  background-image: linear-gradient(45deg, #ff5e6b, #e2177f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
   font-family: "Oxygen", sans-serif;
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #d40101
 }
 
 @media screen and (min-width: 798px) {

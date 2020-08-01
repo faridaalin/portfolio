@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { NavLink } from 'react-router-dom'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import './card.styles.css'
 
 export const Content = ({ heading, description }) => {
+    useEffect(()=> {
+        AOS.init({duration: 1000, once: true})
+    }, [])
+
     return (
-        <div className="content-container">
+        <div className="content-container" data-aos="fade-right">
             <h2 className="content-title">{heading}</h2>
             <p className="content-text">{description}</p>
             <Button name="Contact" />
@@ -31,9 +38,13 @@ export const Button = ({ name, link }) => {
 }
 
 
-export const CardImage = ({ image, name }) => {
+export const CardImage = ({ image, name, }) => {
+    useEffect(()=> {
+        AOS.init({duration: 1000, once: true})
+    }, [])
+
     return (
-        <div className="card-container">
+        <div className="card-container" data-aos="fade-left">
             <img src={image} alt={name} />
         </div>
     )

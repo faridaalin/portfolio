@@ -33,6 +33,7 @@ padding-bottom: 16px;
 .btn {
 padding: 8px 8px;
 display: flex;
+align-items: center;
 }
 .btn a{
     margin-right: 16px;
@@ -43,6 +44,12 @@ display: flex;
 }
 .btn a, #btn-arrow-right {
     color: #0a0a0a;
+    transition: color .3s ease;
+}
+
+.btn:hover a,  .btn:hover #btn-arrow-right{
+    color:  #d40101a8;
+    transition: color .3s ease;
 }
 
 

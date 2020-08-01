@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* #root {
+  height: 100vh;
+} */
+
 img {
   width: 100%;
 }
@@ -23,11 +28,12 @@ img {
 }
 
 body {
-  margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  overflow-y: initial !important;
   font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
 }
 
 code {
