@@ -32,6 +32,9 @@ transition: transform 0.3s ease, fill 0.2s ease;
         padding-left: 32px;
 
     }
+    .icon-container-inner a {
+        margin-right: auto;
+    }
 
     svg {
         margin: 8px;

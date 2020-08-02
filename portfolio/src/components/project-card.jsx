@@ -34,8 +34,8 @@ function ProjectCards({ name, date, gitHub_src_code, image, description, tags, l
                         </div>
 
                         <div className="link">
-                            <a href={gitHub_src_code} className="src-code">Source code</a>
-                            <i id="btn-arrow-right" className="material-icons">arrow_right_alt</i>
+                            <a href={gitHub_src_code} target="blank" className="src-code">Source code</a>
+                            <i id="btn-arrow-right" target="blank" className="material-icons">arrow_right_alt</i>
                         </div>
                     </div>
                 </div>
