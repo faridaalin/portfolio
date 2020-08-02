@@ -27,6 +27,7 @@
 .tags,
 .date {
   font-size: 0.6em;
+  color: #b35d59;
 }
 
 .date {
@@ -86,8 +87,14 @@
   margin: auto;
 }
 
+.project-img img {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
 .project-img img:hover {
-  background: #bbbaba70;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
 .project-img::after {
   content: "";

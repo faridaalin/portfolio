@@ -2,20 +2,6 @@
   color: #0a0a0a;
   font-family: "Nunito Sans", sans-serif;
   font-size: 22px;
-  width: 80vw;
-  margin: auto;
   padding-bottom: 32px;
 }
 
-@media screen and (min-width: 798px) {
-  .form-container {
-    display: flex;
-    max-width: 1224px;
-    margin: auto;
-  }
-  .contact-intro {
-    margin: initial;
-    padding: 32px;
-    width: 50vw;
-  }
-}

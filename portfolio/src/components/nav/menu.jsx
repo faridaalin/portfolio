@@ -9,8 +9,6 @@ import Hamburger from './hamburger'
 const Menu = ({ location }) => {
     const [open, setOpen] = useState(false);
 
-   
-
         const [isFixed, setFixed] = useState(false)
         const headerRef = useRef(null)
 
