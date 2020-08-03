@@ -106,14 +106,14 @@
 
 @media screen and (min-width: 798px) {
     header {
-        background-color: #f2f2f2;
+        background-color: transparent;
         display: flex;
         width: 100%;
         max-width: 1224px;
         margin: auto;
     }
     nav {
-        background-color: #f2f2f2;
+        background-color: transparent;
         margin-left: auto;
     }
     .mobile-menu {
@@ -124,7 +124,7 @@
         height: auto;
         width: 100%;
         transform: translateX(0);
-        background-color: #f2f2f2;
+        background-color: transparent;
         padding-top: 32px;
         flex-direction: row;
     }
