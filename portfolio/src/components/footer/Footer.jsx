@@ -9,7 +9,7 @@ const Footer = () => {
             <IconContainer />
             <div className="footer-container">
                 <p className="copywright">
-                    &copy; {new Date().getFullYear()} Design by Farida Alin 
+                    &copy; {new Date().getFullYear()} Designed and built by Farida Alin 
                 </p>
             </div>
         </div>

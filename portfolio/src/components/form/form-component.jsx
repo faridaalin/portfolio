@@ -25,34 +25,13 @@ function Form(props) {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true })
+    AOS.init({ duration: 400, once: true })
   }, [])
 
 
-  // const onSubmit = data => {
-  //   const templateParams = {
-  //     name: data.name,
-  //     email: data.email,
-  //     message: data.message
-  //   }
-
-  //   emailjs.send(
-  //     'gmail',
-  //     'contact_form_portfolio_site',
-  //     templateParams,
-  //     'user_Wh0dKa6sUbn3uoizLFFJS')
-  //     .then(function (response) {
-  //       console.log('SUCCESS!', response.status, response.text);
-  //       setformSuccess(true)
-  //     }, function (error) {
-  //       console.log('FAILED...', error);
-  //       setformSuccess(false)
-  //     });
-  //     reset()
-  // };
 
   return (
-    <form className="contact_form" data-aos="fade-left" onSubmit={handleSubmit(props.onSubmit)}>
+    <form className="contact_form" data-aos="fade-up" onSubmit={handleSubmit(props.onSubmit)}>
       {/* onSubmit={handleSubmit(onSubmit)} */}
       <div
         className={`input-container ${

@@ -7,7 +7,7 @@ export const projects = {
       tags: 'HTML, CSS, Javascript',
       date: "June 2020",
       gitHub_src_code: "https://github.com/faridaalin/project-exam-spacex",
-      image: "/images/spacex.png",
+      image: "/images/spacex_.png",
       link: "https://faridaalin.com/project_exam/"
     },
     {
@@ -17,7 +17,7 @@ export const projects = {
       tags: 'HTML, CSS',
       date: "May 2020",
       gitHub_src_code: "https://github.com/faridaalin/shadowball",
-      image: "./images/shadowball.png",
+      image: "./images/shadowball_.png",
       link: "https://faridaalin.com/workspace/shadowball/version-2/"
     },
     {
@@ -27,7 +27,7 @@ export const projects = {
       tags: 'HTML, CSS',
       date: "December 2019",
       gitHub_src_code: "https://github.com/faridaalin/semester_project_framx",
-      image: "/images/framx.png",
+      image: "/images/framx_.png",
       link: "https://faridaalin.com/workspace/framx/version-2/"
     },
 
@@ -38,7 +38,7 @@ export const projects = {
       tags: 'HTML, CSS',
       date: "November 2019",
       gitHub_src_code: "https://github.com/faridaalin/recyclen",
-      image: "./images/recycle.png",
+      image: "./images/recycle_.png",
       link: "https://faridaalin.com/recycle/version-2/"
     },
 

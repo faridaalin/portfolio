@@ -13,8 +13,6 @@ function AsideMenu({ setOpen, open, history, location }) {
     })
 
     return (
-        <div>
-
             <ul className={`nav-links ${open ? 'show' : ''}`}>
                 <li>
                     <NavLink to="/" >Home</NavLink>
@@ -30,8 +28,6 @@ function AsideMenu({ setOpen, open, history, location }) {
                 </li>
 
             </ul>
-        </div >
-
 
     )
 }

@@ -55,7 +55,7 @@ function Contact() {
       <PageHeader title="Contact" />
       <div className="form-container">
         {formSuccess ? (
-                <p className="contact-intro" data-aos="fade-right" style={{color: '#d40101a8'}}>
+                <p className="contact-intro" data-aos="fade-up" style={{color: '#d40101a8'}}>
                 Thanks for contacting me, I will get back to you as soon as
                 possible.
                 <br></br>
@@ -64,7 +64,7 @@ function Contact() {
               </p>
 
         ) : (
-          <p className="contact-intro" data-aos="fade-right">
+          <p className="contact-intro" data-aos="fade-up">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore{" "}
           </p>

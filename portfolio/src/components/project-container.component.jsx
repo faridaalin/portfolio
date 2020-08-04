@@ -14,7 +14,7 @@ export const ProjectContainer = (props) => {
     
         <div className="project-container">          
             {
-                data.map((project, index) => <ProjectCards key={index} {...project}/>)
+                data.map((project, index) => <ProjectCards key={index} index={index} {...project}/>)
             }
 
         </div>

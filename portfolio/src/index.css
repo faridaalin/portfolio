@@ -24,7 +24,10 @@ img {
   /* display: grid; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding: 32px 32px;
+  padding: 32px 25px;
+
+  /* display: flex;
+    flex-direction: column-reverse; */
 }
 
 .contact {
@@ -65,8 +68,8 @@ code {
     padding-top: 50px;
   }
   .about  {
-   display: flex;
-   flex-direction: row-reverse;
+   /* display: flex;
+   flex-direction: row-reverse; */
    max-width: 1131px;
    margin: auto;
   }
