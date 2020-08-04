@@ -23,7 +23,9 @@ function ProjectCards({ index, name, date, gitHub_src_code, image, description, 
                     <span className="date">{date}</span>
                 </div>
                 <div className="project-img" data-aos="fade-up">
+                    <a href={link} target="blank">
                     <img src={image} alt={name} />
+                    </a>
                 </div>
                 <div className="project-description-container" data-aos="fade-up">
                     <p className="project-description">{description}</p>
@@ -31,11 +33,9 @@ function ProjectCards({ index, name, date, gitHub_src_code, image, description, 
                     <div className="link-container">
                         <div className="link">
                             <a target={"blank"} href={link} className="project-site">Go to website</a>
-                            <i id="btn-arrow-right" className="material-icons">arrow_right_alt</i>
                         </div>
                         <div className="link">
                             <a href={gitHub_src_code} target="blank" className="src-code">Source code</a>
-                            <i id="btn-arrow-right" target="blank" className="material-icons">arrow_right_alt</i>
                         </div>
                     </div>
                 </div>
