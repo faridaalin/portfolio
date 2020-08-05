@@ -65,15 +65,10 @@ function Contact() {
 
         ) : (
           <p className="contact-intro" data-aos="fade-up">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore{" "}
+            Whether you have questions regarding some of my projects or just want to get in touch with me, 
+            I´m just an inbox a way.  
           </p>
         )}
-        {/* <p className="contact-intro" data-aos="fade-right">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore{" "}
-        </p> */}
-
         <Form onSubmit={onSubmit} />
       </div>
     </div>

@@ -99,10 +99,7 @@ function Form(props) {
       </div>
 
       <div className="btn-container">
-        <input className="btn-send" type="submit" value="Submit" />
-        <i id="btn-arrow-right" className="material-icons">
-          arrow_right_alt
-        </i>
+        <input className="project-site" type="submit" value="Send" />
       </div>
     </form>
   );

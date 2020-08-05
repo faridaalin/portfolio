@@ -62,24 +62,19 @@ label {
   border-bottom-color: #0a0a0a;
 }
 
-.btn-container {
-  display: flex;
-  align-items: center;
-}
-.btn-container #btn-arrow-right {
-  font-size: 24px;
+
+
+.btn-container input {
+  padding: 9px 58px;
+    font-size: 18px;
 }
 
-.btn-send {
-  letter-spacing: 0.1em;
-  font-family: "Oxygen", sans-serif;
-  text-transform: uppercase;
-  color: #0a0a0a;
-  background: none;
-  border: none;
-  padding-right: 16px;
-  font-size: 24px;
-  transition: color .3s ease;
+.btn-container:hover input {
+  color: white;
+  background-color: #d40101a8;
+  border-color: transparent;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
 #btn-arrow-right {
@@ -88,8 +83,7 @@ label {
   transition: color .3s ease;
 }
 
-.btn-container:hover .btn-send,
-.btn-container:hover #btn-arrow-right {
+.btn-container:hover .btn-send{
  color: #d40101a8;;
  transition: color .3s ease;
 }

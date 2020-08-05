@@ -27,8 +27,8 @@ transition: transform 0.3s ease, fill 0.2s ease;
 @media screen and (min-width: 798px) {
     .icon-container-inner {
       flex-direction: column;
-      max-width: 1224px;
-        margin: auto;
+      /* max-width: 1224px;
+        margin: auto; */
         padding-left: 32px;
 
     }

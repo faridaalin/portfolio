@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 import './card.styles.css'
 
-export const Content = ({ heading, description }) => {
+export const Content = ({ heading, description, link_contact, link_projects }) => {
     useEffect(() => {
         AOS.init({ duration: 400, once: true })
     }, [])
@@ -14,38 +14,40 @@ export const Content = ({ heading, description }) => {
     return (
         <div className="content-container" data-aos="fade-up">
             <h2 className="content-title">{heading}</h2>
-            <p className="content-text">{description}</p>
-            <Button name="Contact" />
+            <div className="content-text">
+            <p>{description.part_1}</p>
+            <p>{description.part_2}</p>
+            <p>{description.part_3}</p>
+            </div>
+            <div className="btn">
+                <Button name="Contact" link_contact={link_contact} />
+                <Button name="Projects" link_contact={link_projects} />
+            </div>
         </div>
     )
 }
 
 
-export const Button = ({ name, link }) => {
+export const Button = ({ name, link_contact }) => {
     return (
-        <div className="btn">
-            <NavLink
-                to="/{link}"
-                activeClassName="active-link">
-                {name}
-            </NavLink>
-            <i id="btn-arrow-right" className="material-icons">
-                arrow_right_alt
-             </i>
-
-        </div>
+        <NavLink
+            to={link_contact}
+            activeClassName="active-link"
+            target="blank">
+            {name}
+        </NavLink>
     )
 }
 
 
-export const CardImage = ({ image, name, }) => {
+export const CardImage = ({ image, image_unclipped, name, }) => {
     useEffect(() => {
         AOS.init({ duration: 400, once: true })
     }, [])
 
     return (
 
-        <img src={image} alt={name} className="card-container" data-aos="fade-up" />
+        <img src={image.image_unclipped} alt={name} className="card-container" data-aos="fade-up" />
 
     )
 }
