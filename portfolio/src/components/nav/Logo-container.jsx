@@ -4,8 +4,7 @@ function LogoContainer() {
     return (
         <div className="logo-container">
         <a href="/">
-            <span>Farida</span>
-            <span>Alin</span>
+            <img src="./images/logo.png" alt="logo" />
         </a>
         </div>
 

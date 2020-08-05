@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './project.styles.css'
+import {Github} from './icons/Icons'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -35,7 +36,7 @@ function ProjectCards({ index, name, date, gitHub_src_code, image, description, 
                             <a target={"blank"} href={link} className="project-site">Go to website</a>
                         </div>
                         <div className="link">
-                            <a href={gitHub_src_code} target="blank" className="src-code">Source code</a>
+                            <Github href={gitHub_src_code} target="blank" className="src-code" />
                         </div>
                     </div>
                 </div>
