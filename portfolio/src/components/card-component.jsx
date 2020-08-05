@@ -46,8 +46,10 @@ export const CardImage = ({ image, image_unclipped, name, }) => {
     }, [])
 
     return (
+        <div className="card-container">
+        <img src={image.image_unclipped} alt={name}  data-aos="fade-up" />
+        </div>
 
-        <img src={image.image_unclipped} alt={name} className="card-container" data-aos="fade-up" />
 
     )
 }

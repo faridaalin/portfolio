@@ -12,7 +12,7 @@ function About() {
     <div className="page-wrapper">
       <PageHeader title="About" />
       <div className="about">
-        <CardImage image={about.image} name={about.name} />
+      <CardImage image={about.image} name={about.name} />
         <Content {...about} />
       </div>
     </div>
