@@ -6,13 +6,11 @@ import "./index.css";
 import { about } from "./data/aboutMe";
 
 function About() {
-
-
   return (
     <div className="page-wrapper">
       <PageHeader title="About" />
       <div className="about">
-      <CardImage image={about.image} name={about.name} />
+        <CardImage image={about.image} name={about.name} />
         <Content {...about} />
       </div>
     </div>

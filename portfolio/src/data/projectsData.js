@@ -3,7 +3,7 @@ export const projects = {
     {
       name: "SpaceX",
       projectOrigin: "School project",
-      description: "This project was my project exam the first year of my front-end development studies (June 2019). The goal was to create a microsite for SpaceX to raise awareness about space program activity around the world. The site should appeal to a specific target audience and provide links to more information, live feeds of launches and more.",
+      description: "The goal was to create a microsite for SpaceX to raise awareness about space program activity around the world. The site should appeal to a specific target audience and provide links to more information, live feeds of launches and more.",
       tags: 'HTML, CSS, Javascript',
       date: "June 2020",
       gitHub_src_code: "https://github.com/faridaalin/project-exam-spacex",
@@ -13,7 +13,7 @@ export const projects = {
     {
       name: "Shadowball",
       projectOrigin: "School project",
-      description: "The goal for this project was to put into practice the principles from interaction design and combine them with skills in HTML, CSS and JavaScript. Including persuasive techniques to encourage users to use this website. The ShadowBall Rugby training ball and is the perfect rugby ball for improvement of passing and technique",
+      description: "For this project I needed to put into practice the principles from interaction design and combine them with skills in HTML, CSS and JavaScript. Shadowball is a real company, that sells rugby training balls. Shadowball especially is the perfect rugby ball for improvement of passing and technique.",
       tags: 'HTML, CSS',
       date: "May 2020",
       gitHub_src_code: "https://github.com/faridaalin/shadowball",
@@ -23,7 +23,7 @@ export const projects = {
     {
       name: "Fram X",
       projectOrigin: "School project",
-      description: "Fram X is real company based in Oslo. They build native iOS and Android apps using Cross Platform Technologies focusing on short iterations and high quality. They engaged us to create a new website and new brand identity for them.",
+      description: "Fram X is a Oslo based company specialised in building native iOS and Android apps, using cross platform technologies and focusing on short iterations and high quality. They engaged the students at Noroff School of Technology to create a new website and new brand identity for them.",
       tags: 'HTML, CSS',
       date: "December 2019",
       gitHub_src_code: "https://github.com/faridaalin/semester_project_framx",
@@ -34,7 +34,7 @@ export const projects = {
     {
       name: "Re-cycle",
       projectOrigin: "School project",
-      description: "The goal of the project was to create HTML website for a company called Re-cycle that offer eco-friendly, guided cycling tours of a town. Because their clients are travelling, it was very important that the website was mobile responsive.",
+      description: "This was my first project and was created using only HTML and CSS. The website is for a fictional company called 'Re-cycle' that offers eco-friendly, guided cycling tours of a town. Because their clients are travelling, it was very important that the website was mobile responsive.",
       tags: 'HTML, CSS',
       date: "November 2019",
       gitHub_src_code: "https://github.com/faridaalin/recyclen",

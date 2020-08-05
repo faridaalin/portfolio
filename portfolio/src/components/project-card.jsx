@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 
 
-function ProjectCards({ index, name, date, gitHub_src_code, image, description, tags, link }) {
+function ProjectCards({ index, name, date, gitHub_src_code, image, description, tags, link, projectOrigin }) {
 
     useEffect(()=> {
         AOS.init({duration: 1000, once: true})
@@ -19,9 +19,7 @@ function ProjectCards({ index, name, date, gitHub_src_code, image, description, 
         <div className={`project-card data-index-${index}`}>
             <div className="project-info">
                 <div className="project-info-header" data-aos="fade-up">
-                    <h1 className="project-title">{name}</h1>
-                    <span className="tags">{tags}</span>
-                    <span className="date">{date}</span>
+                    <h2 className="project-title">{name}</h2>
                 </div>
                 <div className="project-img" data-aos="fade-up">
                     <a href={link} target="blank">
@@ -29,8 +27,12 @@ function ProjectCards({ index, name, date, gitHub_src_code, image, description, 
                     </a>
                 </div>
                 <div className="project-description-container" data-aos="fade-up">
+                <h4 className="tags">{projectOrigin}</h4>
                     <p className="project-description">{description}</p>
-                    
+                    <div className="tags-container"> 
+                    <span className="tags">{tags}</span>
+                    <span className="date">{date}</span>
+                    </div>
                     <div className="link-container">
                         <div className="link">
                             <a target={"blank"} href={link} className="project-site">Go to website</a>
