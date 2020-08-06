@@ -5,39 +5,6 @@
 * Browsers: last 4 version
 */
 
-.header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 16px 32px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2000;
-    transform: translate3d(0,0,0);
-}
-
-.header.fixed-nav{
-    background-color: #f2f2f2;
-    -webkit-box-shadow: rgb(160 160 160 / 70%) 0px 10px 30px -19px;
-            box-shadow: rgb(160 160 160 / 70%) 0px 10px 30px -19px;
-}
-
-.header.hidden{
-    visibility: hidden;
-}
-
 .mobile-menu {
     width: 45px;   
     position: relative;
