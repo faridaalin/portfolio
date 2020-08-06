@@ -45,6 +45,7 @@
   margin-top: 32px;
   transition: box-shadow 500s ease;
 }
+
 .project-description-container:hover {
   box-shadow: -2px 4px 8px rgb(232 232 232 / 88%);
   transition: all 300s ease;
@@ -53,9 +54,9 @@
 .project-description {
   padding: 16px 0 16px 0;
   color: #3c3b3b;
-  font-size: 0.9em;
   line-height: 1.7;
   font-weight: 100;
+  font-size: 1em;
 }
 
 .link-container {
