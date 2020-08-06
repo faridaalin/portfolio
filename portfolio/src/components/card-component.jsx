@@ -32,7 +32,7 @@ export const Button = ({ name, link_contact }) => {
         <NavLink
             to={link_contact}
             activeClassName="active-link"
-            target="blank">
+            >
             {name}
         </NavLink>
     )
