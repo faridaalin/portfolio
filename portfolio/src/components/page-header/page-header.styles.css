@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .page-header {
   padding: 16px 30px 32px 30px;
 }
@@ -26,4 +33,3 @@
     padding-top: 32px;
   }
 }
-

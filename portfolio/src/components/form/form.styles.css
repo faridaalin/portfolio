@@ -1,6 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: calc(93vw - 32px);
     margin: auto;
 }
@@ -14,6 +26,8 @@ label {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
   margin-bottom: -8px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   font-size: 18px;
 }
@@ -25,7 +39,11 @@ label {
   border-bottom: 2px solid #8f8f8f;
   background: none;
   resize: none;
+  border-radius: 0;
   font-family: "Nunito Sans", sans-serif;
+  -webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 .input:focus, .changeStyle input,
 .changeStyle textarea  {
@@ -41,13 +59,20 @@ label {
 }
 
 .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 32px;
 }
 .input-container:focus-within label {
   margin-bottom: 0px;
   padding-bottom: 16px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -55,6 +80,8 @@ label {
   padding-bottom: 16px;
   margin-bottom: 0px;
   font-size: 16px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -67,12 +94,18 @@ label {
   color: white;
   background-color: #d40101a8;
   border-color: transparent;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .btn-container:hover .btn-send{
  color: #d40101a8;;
+ -webkit-transition: color .3s ease;;
+ -o-transition: color .3s ease;;
  transition: color .3s ease;
 }
 
@@ -82,7 +115,10 @@ label {
 
 @media screen and (min-width: 798px) {
   .form-container {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     max-width: 1224px;
     margin: auto;
   }
