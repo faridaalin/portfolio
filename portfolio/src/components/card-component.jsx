@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom'
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 import './card.styles.css'
+
 
 export const Content = ({ heading, description, link_contact, link_projects }) => {
     useEffect(() => {
@@ -15,9 +14,9 @@ export const Content = ({ heading, description, link_contact, link_projects }) =
         <div className="content-container" data-aos="fade-up">
             <h2 className="content-title">{heading}</h2>
             <div className="content-text">
-            <p>{description.part_1}</p>
-            <p>{description.part_2}</p>
-            <p>{description.part_3}</p>
+                <p>{description.part_1}</p>
+                <p>{description.part_2}</p>
+                <p>{description.part_3}</p>
             </div>
             <div className="btn">
                 <Button name="Contact" link_contact={link_contact} />
@@ -47,9 +46,8 @@ export const CardImage = ({ image, image_unclipped, name, }) => {
 
     return (
         <div className="card-container">
-        <img src={image.image_unclipped} alt={name}  data-aos="fade-up" />
+            <img src={image.image_unclipped} alt={name} data-aos="fade-up" />
         </div>
-
 
     )
 }

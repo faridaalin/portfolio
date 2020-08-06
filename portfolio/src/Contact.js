@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 
 import "./contact.styles.css";
@@ -11,15 +10,13 @@ import "aos/dist/aos.css";
 
 function Contact() {
   const [formSuccess, setformSuccess] = useState(false);
-  // const { reset } = useForm();
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-
-    const onSubmit = (data, e) => {
-      console.dir(e.target)
+  const onSubmit = (data, e) => {
+    console.dir(e.target);
     const templateParams = {
       name: data.name,
       email: data.email,
@@ -44,29 +41,28 @@ function Contact() {
           setformSuccess(false);
         }
       );
-
   };
-  
-
-
 
   return (
     <div className="page-wrapper contact">
       <PageHeader title="Contact" />
       <div className="form-container">
         {formSuccess ? (
-                <p className="contact-intro" data-aos="fade-up" style={{color: '#d40101a8'}}>
-                Thanks for contacting me, I will get back to you as soon as
-                possible.
-                <br></br>
-                <br></br>
-                Meanwhile, have a nice day!
-              </p>
-
+          <p
+            className="contact-intro"
+            data-aos="fade-up"
+            style={{ color: "#d40101a8" }}
+          >
+            Thanks for contacting me, I will get back to you as soon as
+            possible.
+            <br></br>
+            <br></br>
+            Meanwhile, have a nice day!
+          </p>
         ) : (
           <p className="contact-intro" data-aos="fade-up">
-            Whether you have questions regarding some of my projects or just want to get in touch with me.
-            I´m only an inbox a way.  
+            Whether you have questions regarding some of my projects or just
+            want to get in touch with me. I´m only an inbox a way.
           </p>
         )}
         <Form onSubmit={onSubmit} />

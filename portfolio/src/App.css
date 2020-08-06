@@ -8,17 +8,11 @@
 .content-wrap {
     flex: 1;
     background-color: #f2f2f2;
-    /* background: linear-gradient(#FF5E6B 22.46%, #E2177F 273.57%); */
-    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 
     padding-top: 100px;
-}
-
-.page-wrapper {
-    padding-top: 50px;
 }
 

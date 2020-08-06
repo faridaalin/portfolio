@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-
-
 import ProjectCards from './project-card';
-
 import './project.styles.css'
 import './card.styles.css'
 

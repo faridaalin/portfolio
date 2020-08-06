@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-// import emailjs from 'emailjs-com';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 import "./form.styles.css";
+
 
 function Form(props) {
   const [inputNameLength, setInputNameLength] = useState(0);
@@ -32,7 +30,6 @@ function Form(props) {
 
   return (
     <form className="contact_form" data-aos="fade-up" onSubmit={handleSubmit(props.onSubmit)}>
-      {/* onSubmit={handleSubmit(onSubmit)} */}
       <div
         className={`input-container ${
           inputNameLength > 0 ? "changeStyle" : ""

@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { withRouter } from "react-router";
 import './navigation.styles.css';
-
 import LogoContainer from './Logo-container'
 import AsideMenu from './asideMenu'
 import Hamburger from './hamburger'
@@ -16,7 +15,6 @@ const Menu = ({ location }) => {
 
     const handleScroll = () => {
         if(window.scrollY > previousScroll) { //true
-            // document.body.style.paddingTop = headerRef.current.offsetHeight + 'px';
             setFixed(window.scrollY > previousScroll)
         } else{
             setFixed(window.scrollY > previousScroll) //false

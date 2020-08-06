@@ -2,10 +2,6 @@
   padding: 0 32px;
 }
 
-.project {
-  background: #f2f2f2;
-}
-
 .project-card {
   padding-bottom: 50px;
 }
@@ -33,7 +29,7 @@
   color: #b35d59;
 }
 
-.tags-container .date{
+.tags-container .date {
   font-size: 0.6em;
   font-weight: 400;
   padding-left: 32px;
@@ -43,9 +39,8 @@
   font-size: 1.2em;
 }
 
-
 .project-description-container {
-  box-shadow: -2px 4px 8px rgb(214 210 210 / 88%); 
+  box-shadow: -2px 4px 8px rgb(214 210 210 / 88%);
   padding: 32px 32px;
   margin-top: 32px;
   transition: box-shadow 500s ease;
@@ -57,7 +52,7 @@
 
 .project-description {
   padding: 16px 0 16px 0;
-  color: #565656;
+  color: #3c3b3b;
   font-size: 0.9em;
   line-height: 1.7;
   font-weight: 100;
@@ -72,6 +67,14 @@
   align-items: center;
 }
 
+.link:first-child {
+  padding-right: 32px;
+}
+
+.link a {
+  display: flex;
+}
+
 .project-site {
   border: 1px solid #d40101a8;
   border-radius: 20px;
@@ -80,6 +83,7 @@
   display: block;
   color: #d40101a8;
   text-decoration: none;
+  background: transparent;
   transition: all 0.3s ease;
 }
 
@@ -93,13 +97,10 @@
 
 .link svg {
   fill: #d40101a8;
+  margin: 0;
 }
 .link:hover svg {
   fill: #d40101;
-}
-
-#btn-arrow-right {
-  color: #313131;
 }
 
 .project-img {
@@ -108,7 +109,7 @@
   width: 90%;
   margin: auto;
 }
-.project-img img{
+.project-img img {
   opacity: 0.7;
 }
 
@@ -135,16 +136,13 @@
   transition: all 0.3s cubic-bezier(0.57, 0.1, 0.24, 0.72);
 }
 
-
 @media screen and (min-width: 622px) {
   .link-container {
-    flex-direction: row;
     padding-left: 0px;
   }
 
   .link:first-child {
     margin-bottom: 0px;
-    padding-right: 32px;
   }
 
   .project-info {
@@ -154,16 +152,6 @@
 }
 
 @media screen and (min-width: 798px) {
-  .link-container {
-    flex-direction: row;
-    padding-left: 0px;
-  }
-
-  .link:first-child {
-    margin-bottom: 0px;
-    padding-right: 32px;
-  }
-
   .project-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -194,7 +182,6 @@
   .project-card:nth-child(even) .tags-container {
     display: flex;
     justify-content: flex-end;
-
   }
   .project-card:nth-child(even) .tags {
     text-align: right;
@@ -219,7 +206,6 @@
     grid-row: 2/3;
     position: relative;
     z-index: 2;
-    /* background-color: rgb(251 248 248 / 67%); */
     margin-top: 0;
   }
 
@@ -240,9 +226,4 @@
   .project-info-header {
     padding: 32px 32px 32px 0;
   }
-
-  /* .project-img::after {
-    right: -5%;
-    bottom: -5%;
-  } */
 }

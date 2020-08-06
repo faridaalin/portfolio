@@ -62,8 +62,6 @@ label {
   border-bottom-color: #0a0a0a;
 }
 
-
-
 .btn-container input {
   padding: 9px 58px;
     font-size: 18px;
@@ -75,12 +73,6 @@ label {
   border-color: transparent;
   transform: scale(1.05);
   transition: all 0.3s ease;
-}
-
-#btn-arrow-right {
-  font-size: 36px;
-  color: #0a0a0a;
-  transition: color .3s ease;
 }
 
 .btn-container:hover .btn-send{

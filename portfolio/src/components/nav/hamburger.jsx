@@ -3,7 +3,6 @@ import './navigation.styles.css';
 
 
 const Hamburger = ({ open, setOpen, onClick }) => {
-
     const openHandler = () => {
         setOpen(!open)
     }

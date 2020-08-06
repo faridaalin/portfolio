@@ -10,7 +10,6 @@
   padding: 0px 0 0 16px;
 }
 
-
 .card-container img{
   border-radius: 10%;
 }
@@ -39,6 +38,7 @@
 }
 .content-text p:nth-child(1) {
     font-weight: 400;
+    color: #3c3b3b;
 }
 
 .btn {
@@ -49,10 +49,8 @@
 .btn a {
   margin-right: 16px;
   text-decoration: none;
-  /* letter-spacing: 0.1em; */
   font-family: "Oxygen", sans-serif;
   text-transform: uppercase;
-
   border: 1px solid #d40101a8;
   border-radius: 20px;
   padding: 8px 22px;
