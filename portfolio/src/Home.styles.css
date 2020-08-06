@@ -15,7 +15,7 @@
 .home-nav-container li .home-nav-links {
   font-family: "Oxygen", sans-serif;
   font-size: 2em;
-  color: #1e1e1e;
+  color: transparent;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;

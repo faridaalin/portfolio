@@ -113,6 +113,9 @@
     background: #d40101;   
     width: 100%; 
 }
+.nav-links li a.active-link{
+    font-weight: 400;
+}
 
 
 
@@ -156,6 +159,7 @@
 
 .logo-container {
     text-decoration: none;
+    width: 40px;
 }
 .logo-container a {
     text-decoration: none;
