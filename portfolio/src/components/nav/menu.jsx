@@ -21,9 +21,7 @@ right: 0;
 z-index: 2000;
 transform: translateY(${props => props.scrollDirection === 'down' ? '-88px' : '0px'});
 box-shadow: ${props => props.scrollDirection === 'up' ? `rgb(160 160 160 / 70%) 0px 10px 30px -19px` : 'none'};
-`
-
-
+`;
 
 const Menu = ({ location }) => {
     const [open, setOpen] = useState(false);
@@ -39,14 +37,12 @@ const Menu = ({ location }) => {
         if(fromTop < 5) {
             setscrollDirection('none')
             console.log('none')
-        } else if(fromTop > previousScroll && fromTop > headerRef.current.offsetHeight) {
-            if(scrollDirection !== 'down') {
-                setscrollDirection('down')
-            }
-        } else if(fromTop < previousScroll) {
-            if (scrollDirection !== 'up') {
-                setscrollDirection('up')
-            }
+        } else if((fromTop > previousScroll) && (fromTop > headerRef.current.offsetHeight) && (scrollDirection !== 'down'))  {
+            setscrollDirection('down')
+            console.log('down')
+        } else {
+            setscrollDirection('up')
+            console.log('up')
         }
 
         previousScroll = fromTop;
