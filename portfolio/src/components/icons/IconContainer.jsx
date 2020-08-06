@@ -6,7 +6,7 @@ function IconContainer() {
         <div className="icon-container">
             <div className="icon-container-inner">
             <LinkedIn />
-            <Github />
+            <Github link="https://github.com/faridaalin/"/>
             <Email />
             </div>
         </div>

@@ -18,9 +18,9 @@ export const LinkedIn = () => {
   );
 };
 
-export const Github = () => {
+export const Github = ({link}) => {
   return (
-    <a href="https://github.com/faridaalin/" target="blank">
+    <a href={link} target="blank">
       <svg
         id="Bold"
         enableBackground="new 0 0 24 24"

@@ -37,7 +37,7 @@ function ProjectCards({ index, name, date, gitHub_src_code, image, description, 
                             <a target={"blank"} href={link} className="project-site">Go to website</a>
                         </div>
                         <div className="link">
-                            <Github href={gitHub_src_code} target="blank" className="src-code" />
+                            <Github link={gitHub_src_code} target="blank" className="src-code" />
                         </div>
                     </div>
                 </div>

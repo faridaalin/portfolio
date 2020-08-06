@@ -28,14 +28,14 @@ label {
 }
 .input:focus {
   color: #0a0a0a;
-  font-size: 20px;
+  font-size: 1rem;
   border-bottom-color: #0a0a0a;
 }
 .error {
   color: #e91e63;
   padding-top: 8px;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 16px;
+  font-size: 0.6rem;
 }
 
 .input-container {
@@ -52,19 +52,19 @@ label {
 .changeStyle label {
   padding-bottom: 16px;
   margin-bottom: 0px;
-  font-size: 18px;
+  font-size: 0.8rem;
   transition: all 0.2s ease;
 }
 .changeStyle input,
 .changeStyle textarea {
   color: #0a0a0a;
-  font-size: 20px;
+  font-size: 0.8rem;
   border-bottom-color: #0a0a0a;
 }
 
 .btn-container input {
   padding: 9px 58px;
-    font-size: 18px;
+  font-size: 0.8rem;
 }
 
 .btn-container:hover input {
@@ -105,7 +105,4 @@ label {
     font-weight: 100;
   }
 
-  .changeStyle label  {
-    font-size: 20px;
-  }
 }
