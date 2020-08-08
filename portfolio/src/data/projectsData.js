@@ -7,7 +7,7 @@ export const projects = {
       tags: 'HTML, CSS, Javascript',
       date: "June 2020",
       gitHub_src_code: "https://github.com/faridaalin/project-exam-spacex",
-      image: "/images/spacex_.png",
+      image: "./images/spacex_.png",
       link: "https://faridaalin.com/project_exam/"
     },
     {
@@ -27,7 +27,7 @@ export const projects = {
       tags: 'HTML, CSS',
       date: "December 2019",
       gitHub_src_code: "https://github.com/faridaalin/semester_project_framx",
-      image: "/images/framx_.png",
+      image: "./images/framx_.png",
       link: "https://faridaalin.com/workspace/framx/version-2/"
     },
 
