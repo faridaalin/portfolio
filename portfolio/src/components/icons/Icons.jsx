@@ -2,9 +2,9 @@ import React from "react";
 
 import './icons-styles.css'
 
-export const LinkedIn = () => {
+export const LinkedIn = ({link}) => {
   return (
-    <a href="www.linkedin.com/in/farida-a-" target="blank">
+    <a href={link} target="blank">
       <svg
         //   height="50"
         viewBox="0 0 512 512"
@@ -36,9 +36,9 @@ export const Github = ({link}) => {
   );
 };
 
-export const Email = () => {
+export const Email = ({link}) => {
   return (
-    <a href="mailto: faridaalin8@gmail.com" target="blank">
+    <a href={link} target="blank">
       <svg
         //   height="50"
         viewBox="0 0 448 448"
