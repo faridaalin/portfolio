@@ -4,7 +4,7 @@ import './icons-styles.css'
 
 export const LinkedIn = () => {
   return (
-    <a href="www.linkedin.com/in/farida-a-0a599baa" target="blank">
+    <a href="www.linkedin.com/in/farida-a-" target="blank">
       <svg
         //   height="50"
         viewBox="0 0 512 512"
