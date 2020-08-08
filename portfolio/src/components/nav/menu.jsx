@@ -66,6 +66,7 @@ const Menu = ({ location }) => {
         return () => {
             window.removeEventListener('scroll', () => handleScroll)
         }
+        // eslint-disable-next-line
     }, [])
 
 
