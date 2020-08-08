@@ -4,6 +4,10 @@ import './navigation.styles.css';
 import LogoContainer from './Logo-container'
 import AsideMenu from './asideMenu'
 import Hamburger from './hamburger'
+import throttle from 'lodash/throttle';
+
+
+const THROTTLE_SPEED = 200;
 
 const Menu = ({ location }) => {
     const [open, setOpen] = useState(false);
@@ -38,15 +42,17 @@ const Menu = ({ location }) => {
     
     }
 
+    const throttledHandleScroll = throttle(handleScroll, THROTTLE_SPEED);
+
     useEffect(() => {
         setHeight(ref.current.clientHeight)
       }, [])
  
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener('scroll', throttledHandleScroll)
         return () => {
-            window.removeEventListener('scroll', () => handleScroll)
+            window.removeEventListener('scroll', () => throttledHandleScroll)
         }
         // eslint-disable-next-line
     }, [])
