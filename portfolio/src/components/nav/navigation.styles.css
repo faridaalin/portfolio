@@ -4,6 +4,22 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+.header {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    padding: 32px 32px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    height: 70px;
+    transition: all .3s ease;
+}
+
 
 .mobile-menu {
     width: 45px;   
@@ -123,7 +139,6 @@
 
 @media screen and (min-width: 798px) {
     .header {
-        background-color: transparent;
         width: 100%;
         padding: 16px 6%;
     }
