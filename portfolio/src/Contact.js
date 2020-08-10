@@ -62,7 +62,7 @@ function Contact() {
         ) : (
           <p className="contact-intro" data-aos="fade-up">
             Whether you have questions regarding some of my projects or just
-            want to get in touch with me. I´m only an inbox a way.
+            want to get in touch with me. I´m only an inbox away.
           </p>
         )}
         <Form onSubmit={onSubmit} />
