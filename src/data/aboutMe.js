@@ -4,7 +4,7 @@ export const about = {
   description: {
     part_1: "My name is Farida and I am a front-end development student, currently located in Oslo, Norway.",
     part_2: "I'm at my second and last year of my studies. So far it has been a steep learning curve and I've enjoyed all aspects of it. Looking forward to soon pursue and begin my career in the web development industry.",
-    part_3: "Feel free to explore some of the projects I've worked on and don't hesitate to contact me if you have questions. ",
+    part_3: "Feel free to view some of the projects I've worked on and don't hesitate to contact me if you have questions.",
 },
   technology: ["HTML", "CSS", "JavaScript (ES6+)"],
   image: {
