@@ -8,7 +8,7 @@ export const projects = {
       date: "June 2020",
       gitHub_src_code: "https://github.com/faridaalin/semester-project-exam-spaceX",
       image: "./images/spacex_.png",
-      link: "https://faridaalin.com/project_exam/"
+      link: "https://project-exam-spacex.netlify.app/"
     },
     {
       name: "Shadowball",
