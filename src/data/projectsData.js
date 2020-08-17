@@ -18,7 +18,7 @@ export const projects = {
       date: "May 2020",
       gitHub_src_code: "https://github.com/faridaalin/shadowball",
       image: "./images/shadowball_.png",
-      link: "https://faridaalin.com/workspace/shadowball/version-2/"
+      link: "https://project-shadowball.netlify.app/version_2/"
     },
     {
       name: "Fram X",
@@ -28,7 +28,7 @@ export const projects = {
       date: "December 2019",
       gitHub_src_code: "https://github.com/faridaalin/semester_project_framx",
       image: "./images/framx_.png",
-      link: "https://faridaalin.com/workspace/framx/version-2/"
+      link: "https://framx.netlify.app/version_2/"
     },
 
     {
@@ -39,7 +39,7 @@ export const projects = {
       date: "November 2019",
       gitHub_src_code: "https://github.com/faridaalin/recyclen",
       image: "./images/recycle_.png",
-      link: "https://faridaalin.com/recycle/version-2/"
+      link: "https://project-recycle.netlify.app/version_2/"
     },
 
   ],
