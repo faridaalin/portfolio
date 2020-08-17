@@ -6,7 +6,7 @@ export const projects = {
       description: "The goal was to create a microsite for SpaceX to raise awareness about space program activity around the world. The site should appeal to a specific target audience and provide links to more information, live feeds of launches and more.",
       tags: 'HTML, CSS, Javascript',
       date: "June 2020",
-      gitHub_src_code: "https://github.com/faridaalin/project-exam-spacex",
+      gitHub_src_code: "https://github.com/faridaalin/semester-project-exam-spaceX",
       image: "./images/spacex_.png",
       link: "https://faridaalin.com/project_exam/"
     },
