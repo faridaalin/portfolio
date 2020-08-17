@@ -3,6 +3,7 @@ import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Error from "./Error";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import "./App.css";
@@ -17,10 +18,12 @@ function App() {
           {/*A Switch looks trough its children <Route> and
            renders the first one that matches the current URL */}
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/Projects" exact component={Projects} />
-            <Route path="/About" exact component={About} />
-            <Route path="/Contact" exact component={Contact} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/Projects" component={Projects} />
+            <Route exact path="/About" component={About} />
+            <Route exact path="/Contact" component={Contact} />
+            <Route component={Error} />
+ 
           </Switch>
         </div>
         <Footer />
