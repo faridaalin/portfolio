@@ -37,7 +37,7 @@ export const projects = {
       description: "This was my first project and was created using only HTML and CSS. The website is for a fictional company called 'Re-cycle' that offers eco-friendly, guided cycling tours of a town. Because their clients are travelling, it was very important that the website was mobile responsive.",
       tags: 'HTML, CSS',
       date: "November 2019",
-      gitHub_src_code: "https://github.com/faridaalin/recyclen",
+      gitHub_src_code: "https://github.com/faridaalin/recycle",
       image: "./images/recycle_.png",
       link: "https://project-recycle.netlify.app/version_2/"
     },
