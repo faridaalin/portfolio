@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './card.styles.css'
+import '../cards/card.styles.css'
 
 
 export const Content = ({ heading, description, link_contact, link_projects }) => {

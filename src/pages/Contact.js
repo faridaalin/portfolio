@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 
 import "./contact.styles.css";
-import Form from "./components/form/form-component";
-import PageHeader from "./components/page-header/page-header.component";
+import Form from "../components/form/form-component";
+import PageHeader from "../components/page-header/page-header.component";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

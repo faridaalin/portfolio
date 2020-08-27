@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import './project.styles.css'
-import {Github} from './icons/Icons'
+import '../projects/project.styles.css';
+import {Github} from '../icons/Icons'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

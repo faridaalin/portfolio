@@ -5,6 +5,9 @@ export default function HelmetContainer() {
     return (
         <Helmet>
           <meta charset="utf-8" />
+          <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+          <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet" />
+          <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
           <link rel="icon" href="./images/icon.png" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="keywords" content="HTML, CSS, JavaScript, React.js, scss, Bootstrap, CMS" />

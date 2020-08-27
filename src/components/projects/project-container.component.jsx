@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ProjectCards from './project-card';
-import './project.styles.css'
-import './card.styles.css'
+import ProjectCards from '../projects/project-card';
+import '../projects/project.styles.css';
+import '../cards/card.styles.css';
 
 
 

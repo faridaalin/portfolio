@@ -1,20 +1,22 @@
-import React from "react";
-import Home from "./Home";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import Error from "./Error";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Footer from "./components/footer/Footer";
 import "./App.css";
-import Header from "./components/header-component";
-
 import HelmetContainer from "./components/helmet/HelmetContainer";
+import Loader from './components/loader/Loader'
+
+const Header = React.lazy(() => import('./components/header/header-component'));
+const Home = React.lazy(() => import('./pages/Home'));
+const About = React.lazy(() => import('./pages/About'));
+const Projects = React.lazy(() => import('./pages/Projects'));
+const Contact = React.lazy(() => import('./pages/Contact'));
+const Footer = React.lazy(() => import('./components/footer/Footer'));
+const Error = React.lazy(() => import('./pages/Error'));
 
 function App() {
   return (
     <Router>
       <div className="page-container">
+      <Suspense fallback={<Loader />}>
         <HelmetContainer />
         <Header />
         <div className="content-wrap">
@@ -27,6 +29,7 @@ function App() {
           </Switch>
         </div>
         <Footer />
+        </Suspense>
       </div>
     </Router>
   );
