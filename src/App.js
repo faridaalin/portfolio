@@ -9,15 +9,15 @@ import Footer from "./components/footer/Footer";
 import "./App.css";
 import Header from "./components/header-component";
 
+import HelmetContainer from "./components/helmet/HelmetContainer";
 
 function App() {
   return (
     <Router>
       <div className="page-container">
+        <HelmetContainer />
         <Header />
         <div className="content-wrap">
-          {/*A Switch looks trough its children <Route> and
-           renders the first one that matches the current URL */}
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/Projects" component={Projects} />
