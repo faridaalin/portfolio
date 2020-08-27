@@ -13,7 +13,7 @@ export const projects = {
     {
       name: "Shadowball",
       projectOrigin: "School project",
-      description: "This is prototype for a South African based company. Working path is: Shop - Shadowball Pro size 3. For this project I needed to put into practice the principles from interaction design and combine them with skills in HTML, CSS and JavaScript. Shadowball is a real company, that sells rugby training balls. Shadowball especially is the perfect rugby ball for improvement of passing and technique.",
+      description: "This is prototype for a South African based company. Working path is: Shop - Shadowball Pro size 3. For this project I needed to put into practice the principles from interaction design and combine them with skills in HTML, CSS and JavaScript. Shadowball sells rugby training balls and is the perfect rugby ball for improvement of passing and technique.",
       tags: 'HTML, CSS',
       date: "May 2020",
       gitHub_src_code: "https://github.com/faridaalin/shadowball",
