@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer";
 import "./App.css";
 import Header from "./components/header-component";
 
+
 function App() {
   return (
     <Router>
@@ -23,7 +24,6 @@ function App() {
             <Route exact path="/About" component={About} />
             <Route exact path="/Contact" component={Contact} />
             <Route component={Error} />
- 
           </Switch>
         </div>
         <Footer />
