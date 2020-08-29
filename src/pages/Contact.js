@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
-
 import "./contact.styles.css";
 import Form from "../components/form/form-component";
 import PageHeader from "../components/page-header/page-header.component";
-
+import {Helmet} from "react-helmet";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -45,6 +44,12 @@ function Contact() {
 
   return (
     <div className="page-wrapper contact">
+      <Helmet>
+        <title>Farida Alin | Contact</title>
+        <meta
+          name="description"
+          content="Feel free to contact me for questions or business request."/>
+      </Helmet>
       <PageHeader title="Contact" />
       <div className="form-container">
         {formSuccess ? (
