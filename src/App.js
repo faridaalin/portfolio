@@ -10,7 +10,6 @@ const About = React.lazy(() => import('./pages/About'));
 const Projects = React.lazy(() => import('./pages/Projects'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const Footer = React.lazy(() => import('./components/footer/Footer'));
-const Error = React.lazy(() => import('./pages/Error'));
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
             <Route exact path="/Projects" component={Projects} />
             <Route exact path="/About" component={About} />
             <Route exact path="/Contact" component={Contact} />
-            <Route component={Error} />
           </Switch>
         </div>
         <Footer />

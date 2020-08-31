@@ -51,12 +51,6 @@ appearance: none;
   font-size: 16px;
   border-bottom-color: #0a0a0a;
 }
-.error {
-  color: #e91e63;
-  padding-top: 8px;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 16px;
-}
 
 .input-container {
   display: -webkit-box;
