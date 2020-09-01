@@ -8,11 +8,7 @@ export const projects = {
       date: "June 2020",
       gitHub_src_code: "https://github.com/faridaalin/semester-project-exam-spaceX",
       image: "./images/spacex_.png",
-<<<<<<< HEAD
-      link: "https://project-exam-spacex.netlify.app"
-=======
       link: "https://project-exam-spacex.netlify.app/"
->>>>>>> parent of 31840de... removed error page,
     },
     {
       name: "Shadowball",
