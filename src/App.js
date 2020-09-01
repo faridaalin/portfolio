@@ -10,6 +10,7 @@ const About = React.lazy(() => import('./pages/About'));
 const Projects = React.lazy(() => import('./pages/Projects'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const Footer = React.lazy(() => import('./components/footer/Footer'));
+const Error = React.lazy(() => import('./pages/Error'));
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
         <div className="content-wrap">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/Projects" component={Projects} />
-            <Route path="/About" component={About} />
-            <Route path="/Contact" component={Contact} />
+            <Route exact path="/Projects" component={Projects} />
+            <Route exact path="/About" component={About} />
+            <Route exact path="/Contact" component={Contact} />
+            <Route component={Error} />
           </Switch>
         </div>
         <Footer />
