@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import logo from '../../img/logo.png'
 
 function LogoContainer() {
     return (
         <div className="logo-container">
             <a href="/">
-                <img src="./images/logo.png" alt="logo" />
+                <img src={logo} alt="logo" />
             </a>
         </div>
     )
